@@ -1,0 +1,15 @@
+{
+  "development": {
+     "host": "193.203.184.57", 
+  "username": "u966908622_Streams", 
+  "password": "FarzokMalik@123",
+  "database": "u966908622_upwork", 
+  "port": 3306, 
+    "dialect": "mysql",
+    "logging": false
+  },
+  
+  "jwt": {
+    "secret": "ab349719d82de63fd42e464c986d6220d3d54469d991223c598269d41109dd30"
+  }
+}
