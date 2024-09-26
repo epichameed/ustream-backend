@@ -115,11 +115,11 @@ module.exports = {
       const reportData = {
         reportId: body.reportId,
         userId: body.userId,
-        connects: body.connects || 0,
-        proposals: body.proposals || 0,
-        views: body.views || 0,
-        interviews: body.interviews || 0,
-        projects: body.projects || 0,
+        connects: body.numberConnectsUsedToday || 0,
+        proposals: body.numberOfProposalsSent || 0,
+        views: body.viewsOnProposals || 0,
+        interviews: body.interviewsGotToday || 0,
+        projects: body.projectsGotToday || 0,
         date: body.date || new Date(),
       };
 

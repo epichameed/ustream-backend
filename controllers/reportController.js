@@ -14,11 +14,11 @@ const userReportSchema = joi.object().keys({
 });
 const updateReportSchema = joi.object().keys({
   reportId: joi.string().required(),
-  connects: joi.number().min(0).required(),
-  proposals: joi.number().min(0).required(),
-  views: joi.number().min(0).required(),
-  interviews: joi.number().min(0).required(),
-  projects: joi.number().min(0).required(),
+  numberConnectsUsedToday: joi.number().min(0).required(),
+  numberOfProposalsSent: joi.number().min(0).required(),
+  viewsOnProposals: joi.number().min(0).required(),
+  interviewsGotToday: joi.number().min(0).required(),
+  projectsGotToday: joi.number().min(0).required(),
   userId: joi.string().required(), // Assuming userId is a string (UUID or other format)
   date: joi.date().required(), // Timestamp for when the report was created
 });
